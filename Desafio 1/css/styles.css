@@ -1,0 +1,39 @@
+.ui.horizontal.segments {
+  min-height: 30em;
+}
+
+.ui.container {
+  margin: 10px;
+}
+
+.estatistica {
+  font-weight: bold;
+  color: rgb(21, 75, 253) !important;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.not-visible {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.load-segment {
+  min-height: 201px !important;
+}
+
+.header {
+  margin: 30px;
+}
+
+#found-user-quantity {
+  color: green;
+  font-size: 2em;
+  margin: 20px;
+}
+
+body {
+  background-color: whitesmoke;
+}

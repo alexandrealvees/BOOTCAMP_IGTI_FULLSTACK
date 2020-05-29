@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Trabalho Prático - módulo 01</title>
+  </head>
+  <body>
+    <h1>Trabalho Prático</h1>
+
+    <div class="flex-row">
+      <span class="label">(R) Vermelho</span>
+      <input
+        id="inputRangeRed"
+        class="range"
+        value="0"
+        type="range"
+        min="0"
+        max="255"
+      />
+      <input id="inputTextRed" class="text" value="0" type="text" disabled />
+    </div>
+
+    <div class="flex-row">
+      <span class="label">(G) Verde</span>
+      <input
+        id="inputRangeGreen"
+        class="range"
+        value="0"
+        type="range"
+        min="0"
+        max="255"
+      />
+      <input id="inputTextGreen" class="text" value="0" type="text" disabled />
+    </div>
+
+    <div class="flex-row">
+      <span class="label">(B) Azul</span>
+      <input
+        id="inputRangeBlue"
+        class="range"
+        value="0"
+        type="range"
+        min="0"
+        max="255"
+      />
+      <input id="inputTextBlue" class="text" value="0" type="text" disabled />
+    </div>
+
+    <div id="divSquare" class="square"></div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

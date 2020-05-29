@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Pesquisa de Usuários</title>
+  </head>
+  <body>
+    <div class="ui container" id="content">
+      <h5 class="ui left aligned icon header" id="search-icon"></h5>
+      <div class="ui horizontal segment load-segment" id="load-segment">
+        <div class="ui active inverted dimmer" id="load-animation">
+          <div class="ui massive text loader">Carregando</div>
+        </div>
+      </div>
+
+      <div class="ui container not-visible" id="search-container">
+        <h2 class="ui center aligned violet icon header" id="search-icon">
+          <i class="circular user icon"></i>
+
+          Pesquisar Usuários
+
+          <div class="ui divider"></div>
+        </h2>
+
+        <div
+          class="ui transparent right icon fluid input focus"
+          id="search-segment"
+        >
+          <input type="text" placeholder="Pesquisar..." id="search-input" />
+          <button class="ui button black" id="search-button" disabled>
+            Pesquisar
+          </button>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui horizontal segments">
+        <div class="ui segment pink">
+          <h2 class="header">
+            <span id="found-user-quantity"></span> Usuários encontrado
+          </h2>
+          <div class="ui relaxed divided list" id="user-list"></div>
+        </div>
+        <div class="ui segment teal">
+          <h2 class="header estatistica">Estatística</h2>
+          <p>
+            Masculino:
+            <span class="estatistica" id="found-male-quantity"></span>
+          </p>
+          <p>
+            Feminino:
+            <span class="estatistica" id="found-female-quantity"></span>
+          </p>
+          <p>
+            Soma das Idades: <span class="estatistica" id="soma-idade"></span>
+          </p>
+          <p>
+            Média das Idades: <span class="estatistica" id="media-idade"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
